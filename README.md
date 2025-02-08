@@ -26,7 +26,7 @@ The result contains the cipher text along with the indices of the spaces in the 
 
 The cipher text is divided into two parts L and R.
 
-To decrypt a cipher text, you need to create a new Feistel instance and pass to it the same parameters as in the encryption phase except that you need to set the plaintext to null, the encryption mode to false, and the encryption results i.e. L, R, and indices of spaces
+To decrypt a cipher text, you need to create a new Feistel instance and pass to it the same parameters as in the encryption phase except that you need to set the plaintext to null, the encryption mode to false, and the encryption results i.e. L, R, and the indices of spaces in the original message.
 
 ```
 const fs_2 = new feistelcipher.Feistel(null,secret, rounds, F , false, L, R, spaces) 
