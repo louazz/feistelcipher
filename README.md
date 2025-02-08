@@ -12,7 +12,7 @@ function F(a, b){
     return Array.from(a).reduce((xored, c, idx) => xored + String.fromCharCode(c.charCodeAt(0) ^ b.charCodeAt(idx)), '')
 
 }
-const rounds = 5;
+const rounds = 2;
 ```
 
 ```
@@ -36,3 +36,5 @@ var plaintext = fs_2.reconstruct(plaintext_without_spaces)
 
 ### License
 MIT
+### Author
+Louai Zaiter 2025
