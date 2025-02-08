@@ -16,7 +16,7 @@ const rounds = 5;
 ```
 
 ```
-const feistel = new Feistel(plaintext, secret, rounds, F, true, null, null, null) 
+const feistel = new feistelcipher.Feistel(plaintext, secret, rounds, F, true, null, null, null) 
 const result = feistel.encrypt()
 const L = result[0][0]
 const R = result[0][1]
